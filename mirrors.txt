@@ -1,3 +1,3 @@
 sd-v1-4-full-ema.ckpt:
 	google-drive: https://drive.google.com/file/d/1XmaFAfwKgfpob9K9gdRHfAdgYesUDAvv/view?usp=sharing
-	
+	filen.io: https://filen.io/d/868e77a3-154b-424a-8d2c-edac56d73aff#!yYwgYE4l0vJY7W5zMwvMMwQTKbDGgt91
