@@ -48,11 +48,12 @@ with open(json_file_path, 'r', encoding="utf8") as json_file:
     json_list = list(json_file)
 
 ##Read line
+current_saved_file_count = 0
 current_line_count = 0
 for json_str in json_list:
     current_line_count = current_line_count + 1
     ##415627 last line of 00.json, ignore
-    print("Current Line:" + str(current_line_count) + '/415627')
+    print("Current Line:" + str(current_line_count) + '/415627 | Current saved files count: ' + str(current_saved_file_count) )
     #here, result = line
     result = json.loads(json_str)
 
@@ -98,4 +99,6 @@ for json_str in json_list:
         to_write = humanoid_tags + ', ' + humanoid_rating + ', uploaded on Danbooru'
         txt_name = "labeled_data/" + img_id + '.txt'
         writefile(txt_name, to_write)
+        current_saved_file_count = current_saved_file_count + 1
+        
 
